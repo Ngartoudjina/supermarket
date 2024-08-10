@@ -1,0 +1,693 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#milieu-add {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.suppression {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center!important; */
+    margin-top: 2rem;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    background: rgb(215, 216, 216);
+}
+
+.suppression a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #199dad;
+}
+
+.texto,
+.bresh {
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+}
+
+.bresh {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.img-card {
+    width: 48%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.info-img p {
+    color: gray;
+    font-size: 10px;
+    width: 100%;
+}
+
+.info-img {
+    width: 40%;
+}
+
+.img-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.add-subs {
+    display: flex;
+    width: 120px;
+    margin-left: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.Add {
+    display: flex;
+    gap: 15%;
+    width: 100%;
+}
+
+.total {
+    display: flex;
+    width: 40%;
+    gap: 20px;
+    margin-left: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 0.25rem;
+}
+
+.total div {
+    background: #199dad;
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+
+.total span {
+    width: 40%;
+}
+
+.add-subs span,
+.i {
+    width: 40px!important;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+.i {
+    cursor: pointer;
+}
+
+#milieu-pay {
+    margin-block: 3rem;
+    width: 100%;
+}
+
+.prix-total,
+.caisse {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 0.5rem;
+    margin-block: 0.5rem;
+}
+
+.payer {
+    background: rgb(236, 237, 237);
+    padding: 0.75rem;
+    cursor: pointer;
+    /* width: 50%; */
+}
+
+.la-caisse {
+    background: #199dad;
+    padding: 0.75rem;
+    color: white;
+    cursor: pointer;
+    /* width: 50%; */
+}
+
+body {
+    position: relative;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: url(choose.jpg) top center;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.shop {
+    color: #199dad;
+}
+
+.navbar1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 1rem;
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 4;
+}
+
+.navbar1.active {
+    background: white!important;
+    padding-top: 1rem!important;
+    position: fixed;
+    box-shadow: 0px 0px 12px gray;
+    animation: slideIn 0.6s ease forwards;
+}
+
+.active2 {
+    color: black!important;
+}
+
+.nav1 span,
+.navbar3 span {
+    color: lightcoral;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.logo img {
+    width: 100px;
+    height: 50px;
+}
+
+.navbar1 ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+ul li {
+    list-style: none;
+    transition: all 0.5s ease;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+ul li:hover {
+    transform: translateY(-2px);
+}
+
+.signe {
+    background: #199dad;
+    padding: 10px;
+}
+
+.signe:hover {
+    box-shadow: 0px 2px 12px #09acbe;
+}
+
+
+/* Search */
+
+.search {
+    font-size: 20px;
+}
+
+
+/* Panier */
+
+.panier {
+    cursor: pointer;
+    font-size: 20px;
+    background: #199dad;
+    border-radius: 40px;
+    padding: 0.25rem;
+    transition: all 0.5s ease;
+}
+
+.panier:hover {
+    scale: 1.05;
+}
+
+
+/* Navbar */
+
+.navbar2 {
+    display: inline-flex;
+    padding-left: 12.5rem;
+    margin-top: 5rem;
+    gap: 1rem;
+}
+
+.nav1 {
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Navbar3 */
+
+.navbar3 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12.5rem;
+    margin-top: 5rem;
+    width: 700px;
+}
+
+.navbar3 h1,
+p {
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#milieu-add {
+    width: 100%;
+}
+
+.panier2 {
+    cursor: pointer;
+    font-size: 20px;
+    background: #199dad;
+    border-radius: 40px;
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 30px;
+    right: 6px;
+    transition: all 0.5s ease;
+}
+
+.panier2:hover {
+    scale: 1.05;
+}
+
+
+/* back-to-top */
+
+.back-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    color: #199dad;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.back-to-top span {
+    font-weight: 900;
+    font-size: 4rem;
+    height: 80px;
+    width: 80px;
+}
+
+.footer {
+    position: relative;
+    background: url(b2.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    padding-inline-start: 2rem;
+    padding-block-end: 3rem;
+    padding-block-start: 1rem;
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+}
+
+.foot a {
+    margin-top: 1rem;
+    text-decoration: none;
+    color: gray;
+}
+
+.foot h3 {
+    cursor: pointer;
+    color: white;
+}
+
+.foot h3:hover {
+    text-decoration: underline;
+}
+
+.foot p {
+    width: 200px;
+}
+
+textarea,
+.inpt {
+    outline: none;
+    border: none;
+}
+
+.inpt {
+    line-height: 30px;
+    padding-inline: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: all 0.5s ease;
+}
+
+.inpt:hover {
+    background: lightcoral;
+    color: white;
+}
+
+input {
+    margin-left: 1rem!important;
+}
+
+.zone1,
+input {
+    margin-left: 1rem!important;
+}
+
+@media(max-width:350px) {
+    .contenu {
+        overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    .header {
+        position: relative;
+        width: 100%;
+    }
+    .com {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #199dad;
+        left: 2.7rem!important;
+        top: 300px;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .active2 {
+        background: rgba(92, 95, 126, 0.3);
+        backdrop-filter: blur(7px);
+        color: white;
+    }
+    .ouvre {
+        display: block;
+        position: fixed;
+        font-size: 20px;
+        right: 20px;
+        top: 20px;
+        color: white;
+        cursor: pointer;
+        z-index: 8;
+    }
+    .navbar3 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-top: 5rem;
+        width: 700px;
+    }
+    .navbar3 h1,
+    .navbar3 p {
+        font-weight: 300;
+    }
+    .navbar3 p {
+        width: 250px;
+        text-align: left;
+        font-size: 12px;
+    }
+    .header2 {
+        position: fixed;
+        background: rgba(92, 95, 126, 0.3);
+        backdrop-filter: blur(7px);
+        display: flex;
+        flex-direction: column;
+        margin-right: 400px;
+        gap: 0.5rem;
+        width: 100%;
+        opacity: 0;
+        z-index: 4;
+        transition: all 0.5s ease;
+    }
+    .navbar2 {
+        display: none;
+        flex-direction: column;
+        padding-left: 1rem;
+        margin-top: 5rem;
+        gap: 1rem;
+    }
+    .navbar1 {
+        position: relative;
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 0;
+        z-index: 0;
+    }
+    .acceuil {
+        color: lightcoral;
+    }
+    .navbar1 .logo {
+        display: none !important;
+    }
+    .navbar1 ul {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .panier {
+        cursor: pointer;
+        font-size: 20px;
+        background: none;
+        /* border-radius: 40px; */
+        position: relative;
+        padding: 0;
+        left: 0;
+        bottom: 10px;
+        z-index: 8;
+    }
+    .navbar1 ul i {
+        color: white;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding-inline-start: 1rem;
+        gap: 1rem;
+    }
+    .foot a {
+        margin-top: 0.25rem;
+        margin-left: 1rem;
+        text-decoration: none;
+        color: rgb(151, 151, 151)!important;
+    }
+    .foot h3 {
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+    }
+    .foot h3:hover {
+        text-decoration: underline;
+    }
+    .foot p {
+        width: 300px;
+        font-size: 13px;
+        color: rgb(151, 151, 151)!important;
+    }
+    .detail {
+        font-size: 13px;
+        margin-left: 1rem;
+        color: rgb(151, 151, 151)!important;
+    }
+    .foot h6 {
+        font-size: 15px;
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+    .zone1,
+    input {
+        margin-left: 1rem!important;
+    }
+}
+
+@media(min-width:350px) {
+    .contenu {
+        overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    .header {
+        position: relative;
+        width: 100%;
+    }
+    .Add {
+        justify-content: space-between;
+        margin-inline: 0.25rem;
+        width: 100%;
+    }
+    .com {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #199dad;
+        left: 2.7rem!important;
+        top: 300px;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .active2 {
+        background: rgba(92, 95, 126, 0.3);
+        backdrop-filter: blur(7px);
+        color: white;
+    }
+    .ouvre {
+        display: block;
+        position: fixed;
+        font-size: 20px;
+        right: 20px;
+        top: 20px;
+        color: white;
+        cursor: pointer;
+        z-index: 8;
+    }
+    .navbar3 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-top: 5rem;
+        width: 700px;
+    }
+    .navbar3 h1,
+    .navbar3 p {
+        font-weight: 300;
+    }
+    .navbar3 p {
+        width: 250px;
+        text-align: left;
+        font-size: 12px;
+    }
+    .header2 {
+        position: fixed;
+        background: rgba(92, 95, 126, 0.3);
+        backdrop-filter: blur(7px);
+        display: flex;
+        flex-direction: column;
+        margin-right: 400px;
+        gap: 0.5rem;
+        width: 100%;
+        opacity: 0;
+        z-index: 4;
+        transition: all 0.5s ease;
+    }
+    .navbar2 {
+        display: none;
+        flex-direction: column;
+        padding-left: 1rem;
+        margin-top: 5rem;
+        gap: 1rem;
+    }
+    .navbar1 {
+        position: relative;
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 0;
+        z-index: 0;
+    }
+    .acceuil {
+        color: lightcoral;
+    }
+    .navbar1 .logo {
+        display: none !important;
+    }
+    .navbar1 ul {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .panier {
+        cursor: pointer;
+        font-size: 20px;
+        background: none;
+        /* border-radius: 40px; */
+        position: relative;
+        padding: 0;
+        left: 0;
+        bottom: 10px;
+        z-index: 8;
+    }
+    .navbar1 ul i {
+        color: white;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding-inline-start: 1rem;
+        gap: 1rem;
+    }
+    .foot a {
+        margin-top: 0.25rem;
+        margin-left: 1rem;
+        text-decoration: none;
+        color: rgb(151, 151, 151)!important;
+    }
+    .foot h3 {
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+    }
+    .foot h3:hover {
+        text-decoration: underline;
+    }
+    .foot p {
+        width: 300px;
+        font-size: 13px;
+        color: rgb(151, 151, 151)!important;
+    }
+    .detail {
+        font-size: 13px;
+        margin-left: 1rem;
+        color: rgb(151, 151, 151)!important;
+    }
+    .foot h6 {
+        font-size: 15px;
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+    .zone1,
+    input {
+        margin-left: 1rem!important;
+    }
+}

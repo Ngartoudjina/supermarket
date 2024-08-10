@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css" />
+    <link rel="stylesheet" href="https://fontawesome.com/icons/thumbs-up?f=classic&s=solid" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fontawesome.com/icons/cart-shopping?f=classic&s=light">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="nextcart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <title>Shop1</title>
+</head>
+
+<body>
+    <div class="contenu">
+        <div class="header">
+            <i class="fa fa-bars ouvre"></i>
+            <div class="header2">
+                <div class="navbar1">
+                    <div class="logo"><img src="logo.png" alt="" onclick="window.location.href='index.html';"></div>
+                    <ul>
+                        <li><a href="#" class="simple1 acceuil">Home</a></li>
+                        <li><a href="shop1.html" class="simple2">Shop</a></li>
+                        <li><a href="" class="simple3">Blog</a></li>
+                        <li><a href="#about" class="simple4">About</a></li>
+                        <li><a href="#contact" class="simple5 signe">Contact</a></li>
+                        <i class="fa-sharp-duotone fa-solid fa-magnifying-glass"></i>
+                        <i class="fa fa-shopping-cart panier" onclick="window.location.href='realbasket.html';"></i>
+                    </ul>
+                </div>
+                <div class="navbar2">
+                    <div class="nav1">Home</div>
+                    <div class="nav1">/</div>
+                    <div class="nav1">Dine</div>
+                    <div class="nav1">/</div>
+                    <div class="nav1">Local Foods & <span>Drinks</span></div>
+                </div>
+            </div>
+            <div class="navbar3">
+                <h1>Local Foods & <span>Drinks</span></h1>
+                <p>Grace à des années de recherches et à des ingrédients actifs de haute qualité, nos produits ont fait leurs preuves. Beneficiez de resultats visibles et durables. Faites confiance à la science pour prendre soin de vous.</p>
+            </div>
+        </div>
+        <div class="milieu">
+            <div class="milieu-img">
+                <div class="img1">
+                    <img src="f1.jpg" alt="" class="ok">
+                </div>
+                <div class="img2">
+                    <img src="f1.jpg" alt="" onclick="click1()" id="imga">
+                    <img src="f2.jpg" alt="" onclick="click2()" id="imgb">
+                    <img src="f3.jpg" alt="" onclick="click3()" id="imgc">
+                    <img src="f4.jpg" alt="" onclick="click4()" id="imgd">
+                </div>
+            </div>
+            <div class="milieu-txt">
+                <h6>Home / T-Shirt</h6>
+                <h4>Men's Fashion T Shirt</h4>
+                <h2>$139.00</h2>
+                <select>
+                    <option>Select Size</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                    <option>Small</option>
+                    <option>Large</option>
+                </select>
+                <div class="adding">
+                    <input type="number" value="1" class="choix">
+                    <button class="choit" id="shirti1" onclick="window.location.href='realbasket.html';">Add to Cart</button>
+                </div>
+                <h2>Produits Details</h2>
+                <span style="width: 40%px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quibusdam reprehenderit laboriosam sit odit officiis, sequi, soluta harum mollitia obcaecati quas ducimus quia nihil dolorum doloremque magnam natus esse ipsam incidunt illum molestiae, quisquam omnis? Odio rerum velit quam molestias dignissimos repellendus dolorem eos nisi?</span>
+            </div>
+        </div>
+        <div class="milieu2">
+            <div class="cont-img">
+                <img src="f1.jpg" alt="">
+                <h5>adidas</h5>
+                <h3>Cartoon astronaute T-shirt</h3>
+                <div class="pont-etoile">
+                    <i class="fa-regular fa-star etl" onclick="toggle(event)"></i>
+                    <i class="fa-regular fa-star etl" onclick="toggle(event)"></i>
+                    <i class="fa-regular fa-star etl" onclick="toggle(event)"></i>
+                    <i class="fa-regular fa-star etl" onclick="toggle(event)"></i>
+                    <i class="fa-regular fa-star etl" onclick="toggle(event)"></i>
+                </div>
+                <h4>74$</h4>
+                <i class="fa fa-shopping-cart panier2" onclick="window.location.href='realbasket.html';"></i>
+            </div>
+            <div class="cont-img">
+                <img src="f2.jpg" alt="">
+                <h5>adidas</h5>
+                <h3>Cartoon astronaute T-shirt</h3>
+                <div class="pont-etoile">
+                    <i class="fa-regular fa-star etl" onclick="toggle(event)"></i>
+                    <i class="fa-regular fa-star etl" onclick="toggle(event)"></i>
+                    <i class="fa-regular fa-star etl" onclick="toggle(event)"></i>
+                    <i class="fa-regular fa-star etl" onclick="toggle(event)"></i>
+                    <i class="fa-regular fa-star etl" onclick="toggle(event)"></i>
+                </div>
+                <h4>74$</h4>
+                <i class="fa fa-shopping-cart panier2" onclick="window.location.href='realbasket.html';"></i>
+            </div>
+            <div class="cont-img">
+                <img src="f3.jpg" alt="">
+                <h5>adidas</h5>
+                <h3>Cartoon astronaute T-shirt</h3>
+                <div class="pont-etoile">
+                    <i class="fa-regular fa-star etl" onclick="toggle(event)"></i>
+                    <i class="fa-regular fa-star etl" onclick="toggle(event)"></i>
+                    <i class="fa-regular fa-star etl" onclick="toggle(event)"></i>
+                    <i class="fa-regular fa-star etl" onclick="toggle(event)"></i>
+                    <i class="fa-regular fa-star etl" onclick="toggle(event)"></i>
+                </div>
+                <h4>74$</h4>
+                <i class="fa fa-shopping-cart panier2" onclick="window.location.href='realbasket.html';"></i>
+            </div>
+            <div class="cont-img">
+                <img src="f4.jpg" alt="">
+                <h5>adidas</h5>
+                <h3>Cartoon astronaute T-shirt</h3>
+                <div class="pont-etoile">
+                    <i class="fa-regular fa-star etl" onclick="toggle(event)"></i>
+                    <i class="fa-regular fa-star etl" onclick="toggle(event)"></i>
+                    <i class="fa-regular fa-star etl" onclick="toggle(event)"></i>
+                    <i class="fa-regular fa-star etl" onclick="toggle(event)"></i>
+                    <i class="fa-regular fa-star etl" onclick="toggle(event)"></i>
+                </div>
+                <h4>74$</h4>
+                <i class="fa fa-shopping-cart panier2" onclick="window.location.href='realbasket.html';"></i>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="foot">
+                <img src="voice1.png" alt="" style="width:100px; height:100px;">
+                <p style="color:white; font-weight:200;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, beatae. Nobis ut error omnis asperiores facere nihil est praesentium? Alias.</p>
+            </div>
+            <div class="foot">
+                <h3 style="color:white;" id="about">Featured</h3>
+                <a href="#" style="color:white;">Men</a>
+                <a href="#" style="color:white;">Women</a>
+                <a href="#" style="color:white;">Boys</a>
+                <a href="#" style="color:white;">Child</a>
+                <a href="#" style="color:white;">New arrival</a>
+                <a href="#" style="color:white;">Shoes</a>
+            </div>
+            <div class="foot">
+                <h3 style="color:white;" id="contact">Contact Us</h3>
+                <h6 style="color:white;">ADDRESS</h6>
+                <div style="color:white;" class="detail">Cotonou, Cadjehou avenue Quiera-bont</div>
+                <h6 style="color:white;">PHONE</h6>
+                <div style="color:white;" class="detail">(+229) 59334483</div>
+                <h6 style="color:white;">EMAIL</h6>
+                <div style="color:white;" class="detail">abelbeingar@gmail.com</div>
+            </div>
+            <div class="foot">
+                <h3 style="color:white;">Send message</h3>
+                <form action="">
+                    <p> <textarea name="message" class="zone1" rows="3" cols="20">
+                    </textarea> <br/> </p>
+                    <p>
+                        <input type="submit" value="Valider" onclick="afficheEntree();">
+                    </p>
+                </form>
+            </div>
+        </div>
+        <div class="back-to-top" style="display:none;"><span class="material-symbols-outlined">arrow_circle_up</span></div>
+    </div>
+    <script>
+        const navbar1 = document.querySelector('.navbar1');
+        const simple1 = document.querySelector('.simple1');
+        const simple2 = document.querySelector('.simple2');
+        const simple3 = document.querySelector('.simple3');
+        const simple4 = document.querySelector('.simple4');
+        const simple5 = document.querySelector('.simple');
+        const back = document.querySelector('.back-to-top');
+        const etl = document.querySelector('.etl');
+        const imga = document.querySelector('#imga');
+        const imgb = document.querySelector('#imgb');
+        const imgc = document.querySelector('#imgc');
+        const imgd = document.querySelector('#imgd');
+        const img1 = document.querySelector('.img1');
+        const ok = document.querySelector('.ok');
+        const changer2 = document.querySelector('.changer2');
+        const changer1 = document.querySelector('.changer1');
+        const ouvre = document.querySelector('.ouvre');
+        const header2 = document.querySelector('.header2');
+
+        let iconClicked = false;
+
+        window.addEventListener("scroll", function() {
+            if (window.scrollY > 100 && window.innerWidth > 400) {
+                navbar1.classList.add("active");
+                simple1.classList.add("active2");
+                simple2.classList.add("active2");
+                simple3.classList.add("active2");
+                simple4.classList.add("active2");
+                simple5.classList.add("active2");
+                navbar1.classList.remove("active0");
+            } else if (window.scrollY > 100 && window.innerWidth > 400) {
+                navbar1.classList.add("active0");
+            } else {
+                navbar1.classList.remove("active0");
+                navbar1.classList.remove("active");
+                simple1.classList.remove("active2");
+                simple2.classList.remove("active2");
+                simple3.classList.remove("active2");
+                simple4.classList.remove("active2");
+                simple5.classList.remove("active2");
+            }
+        });
+
+        ouvre.addEventListener('click', () => {
+            iconClicked = true;
+            header2.style.height = '380px'
+
+            if (ouvre.classList.contains('fa-bars')) {
+                header2.style.marginLeft = '0px';
+                header2.style.opacity = '1';
+            } else {
+                header2.style.marginLeft = '400px';
+                header2.style.opacity = '0';
+            }
+            ouvre.classList.toggle('fa-bars');
+            ouvre.classList.toggle('fa-close');
+        });
+
+        if (!iconClicked) {
+            header2.style.height = '0';
+        } else if (iconClicked) {
+            header2.style.height = '380px';
+        }
+
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('.back-to-top').fadeIn('slow');
+                } else {
+                    $('.back-to-top').fadeOut('slow');
+                }
+            });
+        });
+
+        back.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            });
+        })
+
+        function toggle(event) {
+            const clickedStar = event.target;
+            clickedStar.classList.toggle('fa-regular');
+            clickedStar.classList.toggle('fa-solid');
+            clickedStar.style.color = clickedStar.classList.contains('fa-regular') ? 'rgb(189, 187, 183)' : 'lightcoral';
+        }
+
+        function over(event) {
+            const parent = event.target.closest('.pont11');
+            if (parent) {
+                const pontRect = parent.querySelector('.pont-rect');
+                if (pontRect.style.transform = 'translateY(12px)') {
+                    pontRect.style.transform = 'translateY(0)';
+                }
+                pontRect.style.opacity = 1;
+            }
+        }
+
+        function out(event) {
+            const parent = event.target.closest('.pont11');
+            if (parent) {
+                const pontRect = parent.querySelector('.pont-rect');
+                if (pontRect.style.transform = 'translateY(0)') {
+                    pontRect.style.transform = 'translateY(12px)';
+                }
+                pontRect.style.opacity = 0;
+            }
+        }
+
+        function click1() {
+            ok.src = imga.src;
+        }
+
+        function click2() {
+            ok.src = imgb.src;
+        }
+
+        function click3() {
+            ok.src = imgc.src;
+        }
+
+        function click4() {
+            ok.src = imgd.src;
+        }
+
+        function change() {
+            window.location.href = 'index2.html';
+        }
+    </script>
+
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+</body>
+
+</html>
